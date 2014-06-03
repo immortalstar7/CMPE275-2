@@ -1,0 +1,134 @@
+rajvi@HP-EliteBook-6930p:~/Downloads/moo-ws$ cd test/
+rajvi@HP-EliteBook-6930p:~/Downloads/moo-ws/test$ sh test-registration.sh
+-e
+
+HTTP/1.0 200 OK
+Date: Sat, 17 May 2014 02:13:48 GMT
+Server: WSGIServer/0.1 Python/2.7.3
+Content-Length: 23
+Content-Type: text/html; charset=UTF-8
+
+Registration successful-e
+
+rajvi@HP-EliteBook-6930p:~/Downloads/moo-ws/test$ sh test-addBoard.sh
+-e 
+
+HTTP/1.0 200 OK
+Date: Sat, 17 May 2014 02:32:15 GMT
+Server: WSGIServer/0.1 Python/2.7.3
+Content-Length: 17
+Content-Type: text/html; charset=UTF-8
+
+New Board Created-e 
+
+rajvi@HP-EliteBook-6930p:~/Downloads/moo-ws/test$ sh test-addComment.sh 
+-e 
+
+HTTP/1.0 200 OK
+Date: Sat, 17 May 2014 02:36:56 GMT
+Server: WSGIServer/0.1 Python/2.7.3
+Content-Length: 34
+Content-Type: text/html; charset=UTF-8
+
+Success: Comment added for the Pin-e 
+
+rajvi@HP-EliteBook-6930p:~/Downloads/moo-ws/test$ sh test-addPin.sh 
+-e 
+
+HTTP/1.0 200 OK
+Date: Sat, 17 May 2014 02:41:56 GMT
+Server: WSGIServer/0.1 Python/2.7.3
+Content-Length: 11
+Content-Type: text/html; charset=UTF-8
+
+Pin Created-e 
+
+rajvi@HP-EliteBook-6930p:~/Downloads/moo-ws/test$ sh test-attachPin.sh
+-e
+
+HTTP/1.0 200 OK
+Date: Sat, 17 May 2014 02:50:26 GMT
+Server: WSGIServer/0.1 Python/2.7.3
+Content-Length: 25
+Content-Type: text/html; charset=UTF-8
+
+Pin attached to the board-e
+
+rajvi@HP-EliteBook-6930p:~/Downloads/moo-ws/test$ sh test-getAllBoards.sh
+-e
+
+HTTP/1.0 200 OK
+Date: Sat, 17 May 2014 03:09:54 GMT
+Server: WSGIServer/0.1 Python/2.7.3
+Content-Length: 36
+Content-Type: text/html; charset=UTF-8
+
+'Travel'
+'Accessories'
+'Adventures'
+-e
+
+rajvi@HP-EliteBook-6930p:~/Downloads/moo-ws/test$ sh test-getAllPins.sh
+-e
+
+HTTP/1.0 200 OK
+Date: Sat, 17 May 2014 03:10:59 GMT
+Server: WSGIServer/0.1 Python/2.7.3
+Content-Length: 73
+Content-Type: text/html; charset=UTF-8
+
+'4th Street'
+'Paris'
+'redis_example'
+'rafting'
+'Redis_Server'
+'new pin2'
+-e
+
+rajvi@HP-EliteBook-6930p:~/Downloads/moo-ws/test$ sh test-getBoard.sh
+-e
+
+HTTP/1.0 200 OK
+Date: Sat, 17 May 2014 03:19:45 GMT
+Server: WSGIServer/0.1 Python/2.7.3
+Content-Length: 8
+Content-Type: text/html; charset=UTF-8
+
+'Travel'-e
+
+rajvi@HP-EliteBook-6930p:~/Downloads/moo-ws/test$ sh test-getPin.sh
+-e
+
+HTTP/1.0 200 OK
+Date: Sat, 17 May 2014 03:24:26 GMT
+Server: WSGIServer/0.1 Python/2.7.3
+Content-Length: 314
+Content-Type: application/json
+
+{"board_id": "500", "comment": "Add Comments here..\nkparikh:New comment 2\nkparikh:New comment 1", "user_id": "37df3b490a760f3b81eabe7d090001e5", "pin_path": "/home/rajvi/Pictures/consle_ouput.png", "pin_name": "4th Street", "_rev": "7-ff35bd6295512d9dab4a9aad9df0c4a2", "_id": "37df3b490a760f3b81eabe7d09001580"}-e
+
+rajvi@HP-EliteBook-6930p:~/Downloads/moo-ws/test$ sh test-getUserInfo.sh
+-e
+
+HTTP/1.0 200 OK
+Date: Sat, 17 May 2014 03:32:27 GMT
+Server: WSGIServer/0.1 Python/2.7.3
+Content-Length: 40
+Content-Type: text/html; charset=UTF-8
+
+Name: 'rshah'
+Boards:
+300'Accessories'
+-e
+
+rajvi@HP-EliteBook-6930p:~/Downloads/moo-ws/test$ sh test-login.sh
+-e
+
+HTTP/1.0 200 OK
+Date: Sat, 17 May 2014 03:37:29 GMT
+Server: WSGIServer/0.1 Python/2.7.3
+Content-Length: 26
+Content-Type: text/html; charset=UTF-8
+
+Login Successful for Rajvi-e
+
