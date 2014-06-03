@@ -4,7 +4,7 @@ CMPE275-2
 RESTful Social Collaboration through Pinterest Re-­enactment
 1) IDE Requirements: In order to run this application you will need to install Pycharm IDE,
 the intelligent Python IDE with unique code assistance and analysis, for productive Python 
-development on all levels FOR JAVA EE DEVELOPERS to your system. 
+development on all levels for DEVELOPERS to your system. 
 If you dont have ecllipse than you can download it from the following site: http://www.eclipse.org/downloads/
 
 2)Bottle Micro Framework which is which is distributed web framework for Python that has no other library dependency
